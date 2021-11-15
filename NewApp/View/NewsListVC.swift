@@ -10,6 +10,7 @@ import UIKit
 class NewsListVC: UIViewController {
     
     private var newsListVM: NewsListViewModel = NewsListViewModel()
+    private var refreshControl : UIRefreshControl = UIRefreshControl.init()
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -20,7 +21,7 @@ class NewsListVC: UIViewController {
     //MARK: - configUI
     private func configUI() {
         tableView.register(UINib(nibName: TABLE_VIEW_CELL.NewsListCell.rawValue, bundle: nil), forCellReuseIdentifier: TABLE_VIEW_CELL.NewsListCell.rawValue)
-        
+        refreshControllSetup()
         newsListVM.fetchNewsList()
         
         newsListVM.success.bind { [weak self](_) in
@@ -31,6 +32,19 @@ class NewsListVC: UIViewController {
                 }
             }
         }
+    }
+    
+    //MARK: - Refresh controll setup
+    private func refreshControllSetup() {
+        refreshControl.tintColor = AppColors.LoaderColor
+        refreshControl.addTarget(self, action: #selector(refreshDataSetUp) , for: .valueChanged)
+        tableView.refreshControl = refreshControl
+    }
+    
+    //MARK: - Refresh data
+    @objc func refreshDataSetUp() {
+        refreshControl.endRefreshing()
+        newsListVM.fetchNewsList()
     }
 }
 
