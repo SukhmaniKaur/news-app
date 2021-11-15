@@ -9,6 +9,11 @@ import UIKit
 
 class NewsListCell: UITableViewCell {
 
+    // OUTLETS
+    @IBOutlet weak var descriptionLbl: UILabel!
+    @IBOutlet weak var titleLbl: UILabel!
+    @IBOutlet weak var authorLbl: UILabel!
+    @IBOutlet weak var cellImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
