@@ -16,6 +16,8 @@
 		FAF2F9812742A36E009614F4 /* AppCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2F9802742A36E009614F4 /* AppCredentials.swift */; };
 		FAF2F9862742A4F1009614F4 /* AppCreds.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2F9852742A4F1009614F4 /* AppCreds.swift */; };
 		FAF2F9912742A670009614F4 /* NewsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2F9902742A670009614F4 /* NewsListVC.swift */; };
+		FAF2F9982742A9A4009614F4 /* NewsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2F9962742A9A4009614F4 /* NewsListCell.swift */; };
+		FAF2F9992742A9A4009614F4 /* NewsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF2F9972742A9A4009614F4 /* NewsListCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		FAF2F9802742A36E009614F4 /* AppCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCredentials.swift; sourceTree = "<group>"; };
 		FAF2F9852742A4F1009614F4 /* AppCreds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCreds.swift; sourceTree = "<group>"; };
 		FAF2F9902742A670009614F4 /* NewsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListVC.swift; sourceTree = "<group>"; };
+		FAF2F9962742A9A4009614F4 /* NewsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListCell.swift; sourceTree = "<group>"; };
+		FAF2F9972742A9A4009614F4 /* NewsListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsListCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		FAF2F93D2742A13A009614F4 /* NewApp */ = {
 			isa = PBXGroup;
 			children = (
+				FAF2F9952742A97E009614F4 /* TableViewXib */,
 				FAF2F98C2742A61E009614F4 /* ViewModel */,
 				FAF2F98B2742A619009614F4 /* View */,
 				FAF2F98A2742A5FA009614F4 /* Model */,
@@ -161,6 +166,15 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FAF2F9952742A97E009614F4 /* TableViewXib */ = {
+			isa = PBXGroup;
+			children = (
+				FAF2F9962742A9A4009614F4 /* NewsListCell.swift */,
+				FAF2F9972742A9A4009614F4 /* NewsListCell.xib */,
+			);
+			path = TableViewXib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +282,7 @@
 			files = (
 				FAF2F94B2742A13D009614F4 /* LaunchScreen.storyboard in Resources */,
 				FAF2F9482742A13D009614F4 /* Assets.xcassets in Resources */,
+				FAF2F9992742A9A4009614F4 /* NewsListCell.xib in Resources */,
 				FAF2F9462742A13A009614F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAF2F9812742A36E009614F4 /* AppCredentials.swift in Sources */,
+				FAF2F9982742A9A4009614F4 /* NewsListCell.swift in Sources */,
 				FAF2F9912742A670009614F4 /* NewsListVC.swift in Sources */,
 				FAF2F93F2742A13A009614F4 /* AppDelegate.swift in Sources */,
 				FAF2F9862742A4F1009614F4 /* AppCreds.swift in Sources */,
