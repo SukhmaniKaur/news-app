@@ -32,7 +32,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="27i-p2-aBe" secondAttribute="trailing" id="E6e-1t-49D"/>
                             <constraint firstItem="27i-p2-aBe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PYH-GW-d2w"/>
                             <constraint firstItem="27i-p2-aBe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gQm-Ca-zoW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="27i-p2-aBe" secondAttribute="bottom" id="zjq-wQ-Vg8"/>
+                            <constraint firstAttribute="bottom" secondItem="27i-p2-aBe" secondAttribute="bottom" id="zjq-wQ-Vg8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tech Crunch" id="A8A-Zu-i89"/>
@@ -42,7 +42,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="956" y="56"/>
+            <point key="canvasLocation" x="954.375" y="55.985915492957744"/>
+        </scene>
+        <!--News DetailVC-->
+        <scene sceneID="Fvt-7d-aab">
+            <objects>
+                <viewController storyboardIdentifier="NewsDetailVC" id="pEp-p3-1bl" customClass="NewsDetailVC" customModule="NewApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lWj-MQ-Dud">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="54C-Ep-lk9">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vda-hW-gNE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="54C-Ep-lk9" firstAttribute="top" secondItem="Vda-hW-gNE" secondAttribute="top" id="T4y-I5-YJw"/>
+                            <constraint firstItem="Vda-hW-gNE" firstAttribute="trailing" secondItem="54C-Ep-lk9" secondAttribute="trailing" id="Zcd-3x-RCG"/>
+                            <constraint firstAttribute="bottom" secondItem="54C-Ep-lk9" secondAttribute="bottom" id="b33-Oo-2yw"/>
+                            <constraint firstItem="54C-Ep-lk9" firstAttribute="leading" secondItem="Vda-hW-gNE" secondAttribute="leading" id="ryv-18-AGI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="54C-Ep-lk9" id="HdV-MW-1TB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BlK-SP-N2m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1703" y="56"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PeK-2i-sck">
