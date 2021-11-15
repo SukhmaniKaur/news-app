@@ -9,6 +9,7 @@ target 'NewApp' do
   pod 'SainiUtils'
   pod 'Alamofire', '~> 5.4'
   pod 'NVActivityIndicatorView'
+  pod 'SDWebImage', '~> 4.0'
 
   target 'NewAppTests' do
     inherit! :search_paths
