@@ -27,6 +27,7 @@
 		FAF2F9B82742B1B6009614F4 /* API_Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2F9B72742B1B6009614F4 /* API_Helper.swift */; };
 		FAF2F9BD2742B237009614F4 /* NewListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2F9BC2742B237009614F4 /* NewListViewModel.swift */; };
 		FAF2F9C22742B24F009614F4 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2F9C12742B24F009614F4 /* Binding.swift */; };
+		FAF2F9C72742B3CD009614F4 /* NewsListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2F9C62742B3CD009614F4 /* NewsListResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		FAF2F9B72742B1B6009614F4 /* API_Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_Helper.swift; sourceTree = "<group>"; };
 		FAF2F9BC2742B237009614F4 /* NewListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListViewModel.swift; sourceTree = "<group>"; };
 		FAF2F9C12742B24F009614F4 /* Binding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
+		FAF2F9C62742B3CD009614F4 /* NewsListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +204,7 @@
 		FAF2F98A2742A5FA009614F4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FAF2F9C62742B3CD009614F4 /* NewsListResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 				FAF2F9982742A9A4009614F4 /* NewsListCell.swift in Sources */,
 				FAF2F9C22742B24F009614F4 /* Binding.swift in Sources */,
 				FAF2F9BD2742B237009614F4 /* NewListViewModel.swift in Sources */,
+				FAF2F9C72742B3CD009614F4 /* NewsListResponse.swift in Sources */,
 				FAF2F9AD2742AFD6009614F4 /* Utilities.swift in Sources */,
 				FAF2F9912742A670009614F4 /* NewsListVC.swift in Sources */,
 				FAF2F9B82742B1B6009614F4 /* API_Helper.swift in Sources */,
