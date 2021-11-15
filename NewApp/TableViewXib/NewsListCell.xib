@@ -21,7 +21,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGk-1e-a4n" customClass="sainiCardView" customModule="SainiUtils">
                         <rect key="frame" x="5" y="5" width="310" height="140"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aHX-M4-zjz">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aHX-M4-zjz" customClass="roundViewCorner" customModule="NewApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BzI-VZ-gos">
@@ -36,6 +36,10 @@
                                     <constraint firstAttribute="width" secondItem="aHX-M4-zjz" secondAttribute="height" multiplier="1:1" id="vYS-qM-bO6"/>
                                     <constraint firstItem="BzI-VZ-gos" firstAttribute="top" secondItem="aHX-M4-zjz" secondAttribute="top" id="vhc-4a-Cme"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topLeft" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLeft" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRD-9M-ntW">
                                 <rect key="frame" x="145" y="5" width="160" height="21"/>
