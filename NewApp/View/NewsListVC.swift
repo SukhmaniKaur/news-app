@@ -66,4 +66,11 @@ extension NewsListVC: UITableViewDelegate, UITableViewDataSource {
         cell.listInfo = newsListVM.listArr.value[indexPath.row]
         return cell
     }
+    
+    // didSelectRowAt
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = STORYBOARD.MAIN.instantiateViewController(withIdentifier: MAIN_STORYBOARD.NewsDetailVC.rawValue) as! NewsDetailVC
+        vc.newsUrl = newsListVM.listArr.value[indexPath.row].url
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
