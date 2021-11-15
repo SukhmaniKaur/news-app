@@ -43,4 +43,12 @@ struct Article: Codable {
         articleDescription = try values.decodeIfPresent(String.self, forKey: .articleDescription) ?? DocumentDefaultValues.Empty.string
         url = try values.decodeIfPresent(String.self, forKey: .url) ?? DocumentDefaultValues.Empty.string
     }
+    
+    init() {
+        self.author = DocumentDefaultValues.Empty.string
+        self.urlToImage = DocumentDefaultValues.Empty.string
+        self.title = DocumentDefaultValues.Empty.string
+        self.articleDescription = DocumentDefaultValues.Empty.string
+        self.url = DocumentDefaultValues.Empty.string
+    }
 }
