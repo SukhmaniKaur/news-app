@@ -25,4 +25,13 @@ class NewsListCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    var listInfo: Article = Article() {
+        didSet {
+            authorLbl.text = listInfo.author
+            titleLbl.text = listInfo.title
+            descriptionLbl.text = listInfo.articleDescription
+            cellImageView.downloadCachedImage(placeholder: "", urlString: listInfo.urlToImage)
+        }
+    }
+    
 }
