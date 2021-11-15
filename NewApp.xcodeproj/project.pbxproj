@@ -23,6 +23,8 @@
 		FAF2F9992742A9A4009614F4 /* NewsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF2F9972742A9A4009614F4 /* NewsListCell.xib */; };
 		FAF2F9A82742ADA7009614F4 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2F9A72742ADA7009614F4 /* GlobalConstants.swift */; };
 		FAF2F9AD2742AFD6009614F4 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2F9AC2742AFD6009614F4 /* Utilities.swift */; };
+		FAF2F9B32742B0A2009614F4 /* API_Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2F9B22742B0A2009614F4 /* API_Manager.swift */; };
+		FAF2F9B82742B1B6009614F4 /* API_Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2F9B72742B1B6009614F4 /* API_Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		FAF2F9972742A9A4009614F4 /* NewsListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsListCell.xib; sourceTree = "<group>"; };
 		FAF2F9A72742ADA7009614F4 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		FAF2F9AC2742AFD6009614F4 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		FAF2F9B22742B0A2009614F4 /* API_Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_Manager.swift; sourceTree = "<group>"; };
+		FAF2F9B72742B1B6009614F4 /* API_Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,10 +229,20 @@
 		FAF2F9A62742AD94009614F4 /* ProjectHelpers */ = {
 			isa = PBXGroup;
 			children = (
+				FAF2F9B12742B08E009614F4 /* Networking */,
 				FAF2F9A72742ADA7009614F4 /* GlobalConstants.swift */,
 				FAF2F9AC2742AFD6009614F4 /* Utilities.swift */,
 			);
 			path = ProjectHelpers;
+			sourceTree = "<group>";
+		};
+		FAF2F9B12742B08E009614F4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				FAF2F9B22742B0A2009614F4 /* API_Manager.swift */,
+				FAF2F9B72742B1B6009614F4 /* API_Helper.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -470,10 +484,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF2F9B32742B0A2009614F4 /* API_Manager.swift in Sources */,
 				FAF2F9812742A36E009614F4 /* AppCredentials.swift in Sources */,
 				FAF2F9982742A9A4009614F4 /* NewsListCell.swift in Sources */,
 				FAF2F9AD2742AFD6009614F4 /* Utilities.swift in Sources */,
 				FAF2F9912742A670009614F4 /* NewsListVC.swift in Sources */,
+				FAF2F9B82742B1B6009614F4 /* API_Helper.swift in Sources */,
 				FAF2F93F2742A13A009614F4 /* AppDelegate.swift in Sources */,
 				FAF2F9A82742ADA7009614F4 /* GlobalConstants.swift in Sources */,
 				FAF2F9862742A4F1009614F4 /* AppCreds.swift in Sources */,

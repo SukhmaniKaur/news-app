@@ -35,3 +35,15 @@ open class roundViewCorner: UIView {
         layer.mask = mask
     }
 }
+
+//MARK:- Loader
+func showLoader()
+{
+    AppDelegate().sharedDelegate().showLoader()
+}
+
+// MARK: - removeLoader
+func removeLoader()
+{
+    AppDelegate().sharedDelegate().removeLoader()
+}
