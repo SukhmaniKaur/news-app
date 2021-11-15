@@ -8,6 +8,8 @@
 import UIKit
 
 class NewsListVC: UIViewController {
+    
+    private var newsListVM: NewsListViewModel = NewsListViewModel()
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -18,6 +20,8 @@ class NewsListVC: UIViewController {
     //MARK: - configUI
     private func configUI() {
         tableView.register(UINib(nibName: TABLE_VIEW_CELL.NewsListCell.rawValue, bundle: nil), forCellReuseIdentifier: TABLE_VIEW_CELL.NewsListCell.rawValue)
+        
+        newsListVM.fetchNewsList()
     }
 
 }
