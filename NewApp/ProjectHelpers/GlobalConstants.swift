@@ -20,7 +20,7 @@ enum TABLE_VIEW_CELL: String {
 
 //MARK: - MAIN_STORYBOARD
 enum MAIN_STORYBOARD: String {
-    case NewsListVC
+    case NewsListVC, NewsDetailVC
 }
 
 //MARK:- AppColors

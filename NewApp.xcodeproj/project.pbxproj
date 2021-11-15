@@ -28,6 +28,8 @@
 		FAF2F9BD2742B237009614F4 /* NewListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2F9BC2742B237009614F4 /* NewListViewModel.swift */; };
 		FAF2F9C22742B24F009614F4 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2F9C12742B24F009614F4 /* Binding.swift */; };
 		FAF2F9C72742B3CD009614F4 /* NewsListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2F9C62742B3CD009614F4 /* NewsListResponse.swift */; };
+		FAF2F9D62742C5A1009614F4 /* NewsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2F9D52742C5A1009614F4 /* NewsDetailVC.swift */; };
+		FAF2F9DB2742C7B2009614F4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF2F9DA2742C7B2009614F4 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		FAF2F9BC2742B237009614F4 /* NewListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListViewModel.swift; sourceTree = "<group>"; };
 		FAF2F9C12742B24F009614F4 /* Binding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
 		FAF2F9C62742B3CD009614F4 /* NewsListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListResponse.swift; sourceTree = "<group>"; };
+		FAF2F9D52742C5A1009614F4 /* NewsDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailVC.swift; sourceTree = "<group>"; };
+		FAF2F9DA2742C7B2009614F4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF2F9DB2742C7B2009614F4 /* WebKit.framework in Frameworks */,
 				07BA5745B3AC122A8C1B8D90 /* Pods_NewApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,6 +132,7 @@
 		A84B9BB4EB8E326B3145DBA6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FAF2F9DA2742C7B2009614F4 /* WebKit.framework */,
 				E0EE55AFAA8268348E8BE42E /* Pods_NewApp.framework */,
 				8D27887815CAC27B4569B835 /* Pods_NewApp_NewAppUITests.framework */,
 				E4E21965D13F8C06ADB4BA05 /* Pods_NewAppTests.framework */,
@@ -213,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				FAF2F9902742A670009614F4 /* NewsListVC.swift */,
+				FAF2F9D52742C5A1009614F4 /* NewsDetailVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -503,6 +510,7 @@
 				FAF2F9912742A670009614F4 /* NewsListVC.swift in Sources */,
 				FAF2F9B82742B1B6009614F4 /* API_Helper.swift in Sources */,
 				FAF2F93F2742A13A009614F4 /* AppDelegate.swift in Sources */,
+				FAF2F9D62742C5A1009614F4 /* NewsDetailVC.swift in Sources */,
 				FAF2F9A82742ADA7009614F4 /* GlobalConstants.swift in Sources */,
 				FAF2F9862742A4F1009614F4 /* AppCreds.swift in Sources */,
 			);
