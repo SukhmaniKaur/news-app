@@ -18,7 +18,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGk-1e-a4n">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGk-1e-a4n" customClass="sainiCardView" customModule="SainiUtils">
                         <rect key="frame" x="5" y="5" width="310" height="140"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aHX-M4-zjz">
@@ -72,6 +72,11 @@
                             <constraint firstItem="wRD-9M-ntW" firstAttribute="top" secondItem="GGk-1e-a4n" secondAttribute="top" constant="5" id="wkv-jn-Uf9"/>
                             <constraint firstAttribute="trailing" secondItem="wRD-9M-ntW" secondAttribute="trailing" constant="5" id="z1s-el-Obb"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
                 <constraints>
