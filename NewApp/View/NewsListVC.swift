@@ -20,6 +20,7 @@ class NewsListVC: UIViewController {
     
     //MARK: - configUI
     private func configUI() {
+        tableView.accessibilityIdentifier = STATIC_LABELS.tableView.rawValue
         tableView.register(UINib(nibName: TABLE_VIEW_CELL.NewsListCell.rawValue, bundle: nil), forCellReuseIdentifier: TABLE_VIEW_CELL.NewsListCell.rawValue)
         refreshControllSetup()
         newsListVM.fetchNewsList()

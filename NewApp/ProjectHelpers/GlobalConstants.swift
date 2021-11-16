@@ -23,6 +23,11 @@ enum MAIN_STORYBOARD: String {
     case NewsListVC, NewsDetailVC
 }
 
+//MARK: - STATIC_LABELS
+enum STATIC_LABELS: String {
+    case tableView = "TableView"
+}
+
 //MARK:- AppColors
 struct AppColors{
     static let LoaderColor =  #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
