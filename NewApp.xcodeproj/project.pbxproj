@@ -30,6 +30,7 @@
 		FAF2F9C72742B3CD009614F4 /* NewsListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2F9C62742B3CD009614F4 /* NewsListResponse.swift */; };
 		FAF2F9D62742C5A1009614F4 /* NewsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2F9D52742C5A1009614F4 /* NewsDetailVC.swift */; };
 		FAF2F9DB2742C7B2009614F4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF2F9DA2742C7B2009614F4 /* WebKit.framework */; };
+		FAF2FA012742DACD009614F4 /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2FA002742DACD009614F4 /* NetworkingTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		FAF2F9C62742B3CD009614F4 /* NewsListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListResponse.swift; sourceTree = "<group>"; };
 		FAF2F9D52742C5A1009614F4 /* NewsDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailVC.swift; sourceTree = "<group>"; };
 		FAF2F9DA2742C7B2009614F4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		FAF2FA002742DACD009614F4 /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 			children = (
 				FAF2F9552742A13E009614F4 /* NewAppTests.swift */,
 				FAF2F9572742A13E009614F4 /* Info.plist */,
+				FAF2FA002742DACD009614F4 /* NetworkingTests.swift */,
 			);
 			path = NewAppTests;
 			sourceTree = "<group>";
@@ -521,6 +524,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAF2F9562742A13E009614F4 /* NewAppTests.swift in Sources */,
+				FAF2FA012742DACD009614F4 /* NetworkingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -734,7 +738,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = NewAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -757,7 +761,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = NewAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

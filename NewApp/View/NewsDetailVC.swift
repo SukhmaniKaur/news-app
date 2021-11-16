@@ -20,25 +20,8 @@ class NewsDetailVC: UIViewController {
     
     //MARK: - configUI
     private func configUI() {
-        webView.navigationDelegate = self
         guard let link = URL(string: newsUrl) else { return }
         let request = URLRequest(url: link)
         webView.load(request)
-    }
-
-}
-
-//MARK: - Webview Functions
-extension NewsDetailVC: WKNavigationDelegate{
-    // didStartProvisionalNavigation
-    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
-        showLoader()
-        print("WebviewdidStartLoading")
-    }
-    
-    // didFinish
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        print("WebviewdidFinishLoading")
-        removeLoader()
     }
 }
