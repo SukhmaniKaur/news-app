@@ -31,15 +31,13 @@ class NetworkingTests: XCTestCase {
         }
     }
     
-    func testApiResponse() throws {
+    func testApiResponseIsNotNil() throws {
+        let exp = self.expectation(description: "ApiResponseIsNotNil")
         APIManager.sharedInstance.I_AM_COOL_GET(params: [String : Any](), api: API.BASE_URL, Loader: false, isMultipart: false) { (response) in
-            if response == nil {
-                XCTAssertNil(response, "Response of the api is nil")
-            }
-            else {
                 XCTAssertNotNil(response, "Response of the api is not nil")
+                exp.fulfill()
             }
-        }
+            self.waitForExpectations(timeout: 5, handler: nil)
     }
 
 }
